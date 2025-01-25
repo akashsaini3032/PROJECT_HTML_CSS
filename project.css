@@ -4,7 +4,11 @@
     font-family: sans-serif;
 }
 
-/* NAVBAR CSS*/
+/* NAVBAR CSS SAME FOR ALL FILE*/
+/**/
+
+/* General styles */
+
 
 .navbar{
     
@@ -34,7 +38,31 @@
     
 }
 
+
+
+/* NAVBAR CSS FOR MOBILE*/
+
+@media (max-width: 767.98px) {
+    .navbar label {
+        display: block;
+    }
+
+    .navbar ul {
+        display: none;
+        position: absolute;
+        top: 90px;
+        width: 100%;
+        background-color: aqua;
+    }
+
+    .navbar ul li{
+        padding: 20px;
+    }
+}
+
+
 /* HOME PAGE CSS*/
+/* BANNER1*/
 
 .banner{
     
@@ -70,6 +98,8 @@
     size: 1500px;
 }
 
+/* TRENDING CATEGORIES*/
+
 
 .trending{
     
@@ -86,6 +116,9 @@
 } 
 
 
+
+
+/* PROMO SECTION 2DIV*/
 /* promo section*/
 
 .promo-section {
@@ -136,8 +169,10 @@
 }
 
 button {
-    background-color: #e74c3c; 
-    color: #ffffff;
+    background-color: rgba(231, 76, 60, 1)
+    ; 
+    color: rgba(255, 255, 255, 1)
+    ;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
@@ -146,11 +181,11 @@ button {
 }
 
 button:hover {
-    background-color: #d62c1a; 
+    background-color: rgba(214, 44, 26, 1); 
     transform: scale(1.05); 
 }
 
-
+/* LATEST PRODUCT*/
 /* latest section css*/ 
 .latest {
     display: flex;
@@ -161,7 +196,7 @@ button:hover {
 
 .product {
     background-color: white;
-    border: 1px solid #e0e0e0;
+    border: 1px solid rgba(224, 224, 224, 1);
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     padding: 20px;
@@ -176,7 +211,7 @@ button:hover {
 }
 
 .product img {
-    border-bottom: 1px solid #e0e0e0;
+    border-bottom: 1px solid rgba(224, 224, 224, 1);
     margin-bottom: 15px;
 }
 
@@ -192,71 +227,82 @@ button:hover {
 
 .original-price {
     text-decoration: line-through;
-    color: #888;
+    color: rgba(136, 136, 136, 1);
     margin-left: 10px;
 }
 
 
 
 
-
-.popular{
-    
+/* POPULAR PRODUCT SECTION*/
+.popular {
     background-color: white;
-    display:flex;
+    display: flex;
     justify-content: space-evenly;
     align-items: center;
     gap: 30px;
     flex-wrap: wrap;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    
+}
 
-    
-
-} 
-
-.popular div{
+.popular div {
     border: 2px solid gray;
     padding: 40px;
     background-color: rgba(128, 128, 128, 0.079);
+    text-align: center;
+    transition: transform 0.3s ease;
 }
 
-.bannerlast{
-    
+.popular div:hover {
+    transform: scale(1.05);
+}
+
+.popular img {
+    max-width: 100%;
+    height: auto;
+}
+
+.popular h5 {
+    text-decoration: line-through;
+    color: gray;
+    margin-top: 10px;
+}
+
+/* BANNER LAST*/
+/* Banner last*/
+.bannerlast {
     background-color: rgba(128, 128, 128, 0.164);
-    display:flex;
+    display: flex;
     justify-content: center;
     align-items: center;
     gap: 20px;
     flex-wrap: wrap;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    
-
-    
-
-} 
-
-
-.bannerlast div h3{
-color: red;
+    text-align: center;
 }
 
-.bannerlast div h1{
-
-font-size: 50px;
+.bannerlast div h3 {
+    color: red;
 }
 
-.bannerlast div button{
-padding: 14px 16px;
-border-radius: 20px;
-border: none;
-background-color: red;
-color: white;
-size: 1500px;
+.bannerlast div h1 {
+    font-size: 50px;
+}
+
+.bannerlast div button {
+    padding: 14px 16px;
+    border-radius: 20px;
+    border: none;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+    margin-bottom: 10px;
 }
 
 
 
+
+/* BLOG AND EVENT*/
 /* BlOG and EVENTS*/
 .mainSection {
     display: flex;
@@ -267,7 +313,7 @@ size: 1500px;
 }
 
 .childDiv {
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 1);
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
@@ -292,13 +338,13 @@ size: 1500px;
 }
 
 .date {
-    color: #888;
+    color: rgba(136, 136, 136, 1);
     font-size: 14px;
     margin: 0;
 }
 
 .title {
-    color: #333;
+    color: rgba(51, 51, 51, 1);
     font-size: 18px;
     margin: 5px 0 0;
 }
@@ -308,7 +354,7 @@ size: 1500px;
 
 
 
-
+/* BIG DISCOUNT BANNER*/
 .promosectionh {
     background-image: url('h3.webp');
     background-size: cover;
@@ -348,7 +394,7 @@ size: 1500px;
 }
 
 .shopNow {
-    background-color: #ff5722;
+    background-color: rgba(255, 87, 34, 1);
     color: white;
     border: none;
     padding: 10px 20px;
@@ -359,10 +405,13 @@ size: 1500px;
 }
 
 .shopNow:hover {
-    background-color: #e64a19;
+    background-color: rgba(230, 74, 25, 1) ;
 
 
 }
+
+
+/* LAST SECTION*/
 
 .containerh {
     display: flex;
@@ -387,169 +436,8 @@ h3 {
 
 p {
     font-size: 14px;
-    color: #666;
+    color: rgba(102, 102, 102, 1)    ;
 }
-
-
-/* PAGE PAGE CSS*/
-
-
-.pbanner{
-    
-    background-color: white;
-    display:flex;
-    justify-content: space-evenly;
-    align-items: center;
-    gap: 30px;
-    flex-wrap: wrap;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    
-
-    
-
-} 
-
-.pbanner div{
-    border: 2px solid gray;
-    padding: 70px;
-
-    width: 200px;
-    
-
-    
-}
-
-.pteam{
-    
-    background-color: white;
-    display:flex;
-    justify-content: space-evenly;
-    align-items: center;
-    gap: 0px;
-    flex-wrap: wrap;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    
-
-    
-
-} 
-
-.pteam div{
-    border: 2px solid gray;
-    padding: 30px;
-}
-
-.clients{
-    
-    background-color: white;
-    display:flex;
-    justify-content: space-evenly;
-    align-items: center;
-    gap: 0px;
-    flex-wrap: wrap;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    
-
-    
-
-} 
-
-.clients div{
-    border: 2px solid gray;
-    padding: 30px;
-}
-
-.pageform{
-    background-color: rgba(128, 128, 128, 0.116);
-    display:flex;
-    justify-content: space-evenly;
-    align-items: center;
-    gap: 0px;
-    padding-right: 80px;
-    flex-wrap: wrap;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    
-
-}
-
-.form1 {
-    width: 100%;
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 20px;
-    box-shadow: 0 0 10px black;
-    background-color: rgb(255, 255, 255);
-    border-radius: 8px;
-}
-
-.form1 h2 {
-    text-align: center;
-    margin-bottom: 20px;
-    font-size: 24px;
-    color: rgb(128, 128, 128);
-}
-
-.form1 input,
-.form1 textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid lightgray;
-    border-radius: 4px;
-    font-size: 16px;
-}
-
-.form1 input[type="submit"] {
-    background-color: red;
-    color: white;
-    border: none;
-    cursor: pointer;
-    font-size: 18px;
-    padding: 15px;
-    border-radius: 4px;
-}
-
-.form1 input[type="submit"]:hover {
-    background-color: red;
-}
-
-
-
-.contactinfo {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    padding: 20px;
-    
-    background-color: #f9f9f9; 
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
-}
-
-.contactitem {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-}
-
-.contactitem i {
-    font-size: 24px;
-    color: #007bff; 
-}
-
-.contactitem div {
-    display: flex;
-    flex-direction: column;
-}
-
-.contactitem p {
-    margin: 0;
-    font-size: 16px;
-    color: #333; 
-}
-
-
-
 
 
 /* ELECTRONIC PAGE CSS*/
@@ -624,7 +512,6 @@ p {
 
     
 }
-
 
 
 
@@ -723,7 +610,7 @@ p {
 
 .read-more {
     display: inline-block;
-    color: #ff3b30;
+    color: rgba(255, 59, 48, 1)    ;
     text-decoration: none;
     font-weight: bold;
     margin-top: 10px;
@@ -734,6 +621,225 @@ p {
 
 }
 
+
+
+
+
+/* PAGE PAGE CSS*/
+
+/* First Banner css*/
+.pbanner {
+    background-color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.pbanner div {
+    border: 2px solid gray;
+    padding: 70px;
+    width: 200px;
+    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.pbanner div:hover {
+    transform: scale(1.05);
+    border-color: rgba(0, 0, 255, 1); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+}
+
+
+
+/*SECOND BANNER CSS*/
+
+.pteam {
+    background-color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 0px;
+    flex-wrap: wrap;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.pteam div {
+    border: 2px solid gray;
+    padding: 30px;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+    text-align: center; 
+}
+
+.pteam div:hover {
+    transform: scale(1.1);
+    border-color: rgba(0, 123, 255, 1); 
+}
+
+
+.pteam h3 {
+    font-size: 1.5em;
+    color: rgba(51, 51, 51, 1);
+    margin-top: 15px;
+}
+
+.pteam h4 {
+    font-size: 1.2em;
+    color: rgba(119, 119, 119, 1);
+    margin-top: 10px;
+    font-weight: normal;
+}
+
+
+
+
+/*Fourth BANNER CSS*/
+.clients {
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 80px;
+    justify-content: space-between;
+    padding-left: 80px;
+}
+
+.clients h2 {
+    font-size: 2em;
+}
+
+.clients p {
+    font-size: 1em;
+    color: gray;
+}
+
+.clients .testimonialCard {
+    background-color: rgba(211, 211, 211, 0.5); 
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    margin: 20px auto;
+    transition: transform 0.3s;
+}
+
+.clients .testimonialCard:hover {
+    transform: scale(1.05);
+}
+
+.clients .quoteIcon {
+    font-size: 2em;
+    color: pink;
+}
+
+.clients h4 {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.clients .author {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.clients .authorTitle {
+    font-size: 0.9em;
+    color: gray;
+}
+
+
+
+/*Third BANNER CSS*/
+
+.pageform{
+    background-color: rgba(128, 128, 128, 0.116);
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 0px;
+    padding-right: 80px;
+    flex-wrap: wrap;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+
+}
+
+.form1 {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: 0 0 10px black;
+    background-color: rgb(255, 255, 255);
+    border-radius: 8px;
+}
+
+.form1 h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: rgb(128, 128, 128);
+}
+
+.form1 input,
+.form1 textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid lightgray;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.form1 input[type="submit"] {
+    background-color: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 15px;
+    border-radius: 4px;
+}
+
+.form1 input[type="submit"]:hover {
+    background-color: red;
+}
+
+
+
+.contactinfo {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    
+    background-color: #f9f9f9; 
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.contactitem {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.contactitem i {
+    font-size: 24px;
+    color: rgba(0, 123, 255, 1); 
+}
+
+.contactitem div {
+    display: flex;
+    flex-direction: column;
+}
+
+.contactitem p {
+    margin: 0;
+    font-size: 16px;
+    color: rgba(51, 51, 51, 1); 
+}
 
 
 
@@ -816,7 +922,7 @@ p {
     display: flex;
     justify-content: space-between;
     padding: 20px;
-    background-color: #f8f8f8;
+    background-color: rgba(248, 248, 248, 1)    ;
     font-family: Arial, sans-serif;
 }
 .footerColumn {
@@ -830,7 +936,7 @@ p {
 }
 .footerColumn p, .footerColumn a {
     margin-bottom: 10px;
-    color: #666;
+    color: rgba(51, 51, 51, 1)    ;
     text-decoration: none;
 }
 .footerColumn a:hover {
@@ -839,9 +945,9 @@ p {
 .footerBottom {
     text-align: center;
     padding: 10px;
-    background-color: #e8e8e8;
+    background-color: rgba(232, 232, 232, 1)    ;
     font-size: 14px;
-    color: #999;
+    color: rgba(153, 153, 153, 1)   ;
 }
 .appButtons img {
     width: 100px;
