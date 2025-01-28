@@ -2,6 +2,8 @@
     margin: 0px;
     padding: 0px;
     font-family: sans-serif;
+
+    
 }
 
 /* NAVBAR CSS SAME FOR ALL FILE*/
@@ -17,7 +19,7 @@
 
 
 .navbar .logo img {
-    max-height: 50px;
+   max-height: 50px;
 }
 
 
@@ -43,6 +45,10 @@
     font-size: 20px;
 }
 
+#click{
+    display: none;
+}
+
 .menu-icon {
     display: none;
 }
@@ -60,7 +66,8 @@
         background-color: white;
         position: absolute;
         top: 60px;
-        left: 0;
+        right: 0;
+        
         
         text-align: center;
     }
@@ -87,6 +94,28 @@
 }
 
 
+/*tablet navbar*/
+@media (min-width: 426px) and (max-width: 768px) {
+    .navbar {
+        padding: 8px 15px; 
+    }
+
+    .navbar .logo img {
+        max-height: 40px; 
+    }
+
+    .navbar .menu ul {
+        gap: 20px; 
+        font-size: 18px; 
+    }
+
+    .navbar .icons {
+        gap: 40px; 
+        font-size: 40px; 
+    }
+}
+
+
 
 
 
@@ -95,6 +124,10 @@
 
 /* HOME PAGE CSS*/
 /* BANNER1*/
+
+.heading{
+    padding-left: 30px;
+}
 
 .banner{
     
@@ -110,6 +143,11 @@
         
     
 } 
+
+
+.banner div{
+    gap: 10px;
+}
 
 
 .banner div h3{
@@ -128,6 +166,17 @@
     background-color: red;
     color: white;
     size: 1500px;
+}
+
+
+@media (max-width: 768px){
+    .banner{
+    
+        padding-top: 30px;
+        padding-left: 20px;      
+    
+} 
+
 }
 
 /* TRENDING CATEGORIES*/
@@ -215,6 +264,15 @@ button {
 button:hover {
     background-color: rgba(214, 44, 26, 1); 
     transform: scale(1.05); 
+}
+
+
+@media (max-width: 768px){
+    .promo-section{
+        padding-left: 10px;
+        padding-right: 0px;
+    }
+
 }
 
 /* LATEST PRODUCT*/
@@ -329,6 +387,19 @@ button:hover {
     color: white;
     cursor: pointer;
     margin-bottom: 10px;
+}
+
+@media (min-width: 426px) and (max-width: 768px){
+    .bannerlast{
+        padding-top: 50px;
+    }
+}
+
+@media (max-width: 768px){
+    .bannerlast div img{
+        padding-right: 60px;
+    }
+    
 }
 
 
@@ -450,6 +521,7 @@ button:hover {
     justify-content: space-around;
     align-items: center;
     padding: 20px;
+    flex-wrap: wrap;
 }
 
 .section {
@@ -469,6 +541,10 @@ h3 {
 p {
     font-size: 14px;
     color: rgba(102, 102, 102, 1)    ;
+}
+
+@media (max-width: 768px){
+
 }
 
 
@@ -533,10 +609,16 @@ p {
     padding: 70px;
 
     width: 200px;
+    transition: transform 0.3s ease;
     
 
     
 }
+
+.container div:hover {
+    transform: scale(1.05); 
+}
+
 
 .container div h4{
     color: red;
@@ -610,7 +692,6 @@ p {
         background-color: rgba(128, 128, 128, 0.079);
         padding: 30px;
         text-align: center;
-        flex-basis: calc(20% - 20px);
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         border-radius: 10px;
         transition: transform 0.3s;
@@ -794,6 +875,7 @@ p {
     flex-wrap: wrap;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     
+    
 
 }
 
@@ -805,6 +887,7 @@ p {
     box-shadow: 0 0 10px black;
     background-color: rgb(255, 255, 255);
     border-radius: 8px;
+    
 }
 
 .form1 h2 {
@@ -895,6 +978,8 @@ p {
 
 } 
 
+
+
 .pcontact div{
     border: 2px solid white;
     padding: 70px;
@@ -956,6 +1041,7 @@ p {
     padding: 20px;
     background-color: rgba(248, 248, 248, 1)    ;
     font-family: Arial, sans-serif;
+    flex-wrap: wrap;
 }
 .footerColumn {
     flex: 1;
@@ -985,6 +1071,8 @@ p {
     width: 100px;
     margin-right: 10px;
 }
+
+
 .paymentOptions img {
     width: 400px;
     margin-top: 10px;
