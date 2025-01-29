@@ -2,8 +2,14 @@
     margin: 0px;
     padding: 0px;
     font-family: sans-serif;
+    
+    
 
     
+}
+
+body{
+    overflow-x: hidden;
 }
 
 /* NAVBAR CSS SAME FOR ALL FILE*/
